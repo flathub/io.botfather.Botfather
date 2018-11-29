@@ -57,8 +57,16 @@ modules:
         commands:
           - tar --warning=no-unknown-keyword -zxf all.tar.gz
           - rm -rf all.tar.gz
+          - mkdir -p /app/extra/flash
+          - tar --warning=no-unknown-keyword -zxf flashplayer.tar.gz -C /app/extra/flash
+          - rm -rf flashplayer.tar.gz
       - type: extra-data
         filename: all.tar.gz
         url: http://repo.botfather.io/flathub/all-4.3.4.tar.gz
         sha256: 795fb9691c96cd0a5940ae6d86ddae81303cc14edf9e54981c99fedeeefcbe41
         size: 68716138
+      - type: extra-data
+        filename: flashplayer.tar.gz
+        url: https://fpdownload.adobe.com/pub/flashplayer/pdc/31.0.0.153/flash_player_ppapi_linux.x86_64.tar.gz
+        sha256: 1771505f6a96d4a56af9918ed7896874a826de4666beb55aea8d3f8b4356e586
+        size: 9482489
