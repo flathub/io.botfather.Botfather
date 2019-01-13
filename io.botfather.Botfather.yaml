@@ -67,6 +67,6 @@ modules:
         size: 68079925
       - type: extra-data
         filename: flashplayer.tar.gz
-        url: http://repo.botfather.io/flathub/flash_player_ppapi_linux.x86_64.tar.gz
-        sha256: 0a2a490848704b1ac5c06190978dfc083fce3db1b73a303aa1bd80cee247532f
-        size: 9482471
+        url: http://repo.botfather.io/flathub/fp_ppapi_linux_32.0.0.114_x86_64.tar.gz
+        sha256: deeb079c3c625603a3dff103ffc647f13876beae7a148abaa27eee86abcd8978
+        size: 9482535
