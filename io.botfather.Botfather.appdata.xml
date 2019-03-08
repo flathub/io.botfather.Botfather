@@ -19,15 +19,31 @@
 	<screenshots>
 		<screenshot type="default">
 			<caption>The Botfather main window</caption>
-			<image>https://botfather.io/static/metadata/flatpak/main-window.png</image>
+			<image>https://repo.botfather.io/screenshots/mainwindow-1440x800.png</image>
 		</screenshot>
 		<screenshot>
-			<caption>Android devices dialog</caption>
-			<image>https://botfather.io/static/metadata/flatpak/android-window.png</image>
+			<caption>A bots configuration tab</caption>
+			<image>https://repo.botfather.io/screenshots/configtab-1440x800.png</image>
+		</screenshot>
+		<screenshot>
+			<caption>A bots settings tab</caption>
+			<image>https://repo.botfather.io/screenshots/settingstab-1440x800.png</image>
+		</screenshot>
+		<screenshot>
+			<caption>A bots update tab used to update scripts</caption>
+			<image>https://repo.botfather.io/screenshots/updatetab-1440x800.png</image>
+		</screenshot>
+		<screenshot>
+			<caption>The scriptmanager used to install scripts</caption>
+			<image>https://repo.botfather.io/screenshots/scriptmanager-1440x800.png</image>
+		</screenshot>
+		<screenshot>
+			<caption>Android device dialog</caption>
+			<image>https://repo.botfather.io/screenshots/android-1440x800.png</image>
 		</screenshot>
 		<screenshot>
 			<caption>Window showing the integrated browser</caption>
-			<image>https://botfather.io/static/metadata/flatpak/browser-window.png</image>
+			<image>https://repo.botfather.io/screenshots/browser-1440x800.png</image>
 		</screenshot>
 	</screenshots>
 
