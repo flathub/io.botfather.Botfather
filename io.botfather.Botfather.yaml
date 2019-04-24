@@ -16,6 +16,7 @@ finish-args:
   - "--share=network" # access the network (CEF)
   - "--device=all" # for /dev/uinput (mouse and keyboard input)
   - "--talk-name=org.freedesktop.ScreenSaver"
+  - "--talk-name=org.kde.StatusNotifierWatcher"
 cleanup:
   - "/CEF"
   - "/include"
