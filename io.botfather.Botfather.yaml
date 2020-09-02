@@ -64,9 +64,9 @@ modules:
           - rm -rf flashplayer.tar.gz
       - type: extra-data
         filename: all.tar.gz
-        url: http://repo.botfather.io/flathub/all-6.2.1.tar.gz
-        sha256: cb939df43604e9bbea0a30350cdfd08497e21084194e0dd6f7b3ab639baa9c57
-        size: 73764402
+        url: http://repo.botfather.io/flathub/all-6.3.0.tar.gz
+        sha256: e4701d66035e2dacba980968ed83bc3446f24b97bacde876b96e49c752fb7da4
+        size: 73699180
       - type: extra-data
         filename: flashplayer.tar.gz
         url: http://repo.botfather.io/flathub/fp_ppapi_linux_32.0.0.114_x86_64.tar.gz
