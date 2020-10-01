@@ -53,6 +53,7 @@
 	</content_rating>
 
 	<releases>
+		<release date="2020-10-01" version="6.6.0"></release>
 		<release date="2020-09-11" version="6.5.0"></release>
 		<release date="2020-09-05" version="6.4.0"></release>
 		<release date="2020-09-02" version="6.3.0"></release>
