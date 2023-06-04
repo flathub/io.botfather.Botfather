@@ -1,7 +1,7 @@
 app-id: io.botfather.Botfather
 default-branch: stable
 runtime: org.kde.Platform
-runtime-version: '5.12'
+runtime-version: '5.15-22.08'
 sdk: org.kde.Sdk
 command: botfather
 tags:
