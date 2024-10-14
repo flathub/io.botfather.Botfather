@@ -50,9 +50,7 @@
 		</screenshot>
 	</screenshots>
 
-	<content_rating type="oars-1.0">
-		<content_attribute id="money-purchasing">mild</content_attribute>
-	</content_rating>
+	<content_rating type="oars-1.1"/>
 
 	<releases>
 		<release date="2024-10-14" version="6.9.0"></release>
