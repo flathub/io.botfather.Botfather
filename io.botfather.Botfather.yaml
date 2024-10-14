@@ -1,7 +1,7 @@
 app-id: io.botfather.Botfather
 default-branch: stable
 runtime: org.kde.Platform
-runtime-version: '5.12'
+runtime-version: '5.15-22.08'
 sdk: org.kde.Sdk
 command: botfather
 tags:
@@ -28,9 +28,7 @@ cleanup:
   - "*.a"
 modules:
   - shared-modules/udev/udev-175.json
-  - gyp/gyp.json
-  - nss/nss-3.39.json
-  - opencv/opencv-3.4.3.json
+  - opencv/opencv-4.9.0.json
   - libgit2/libgit2.json
   - name: botfather
     buildsystem: simple
@@ -57,18 +55,10 @@ modules:
       - type: script
         dest-filename: apply_extra
         commands:
-          - tar --warning=no-unknown-keyword -zxf all.tar.gz
-          - rm -rf all.tar.gz
-          - mkdir -p /app/extra/flash
-          - tar --warning=no-unknown-keyword -zxf flashplayer.tar.gz -C /app/extra/flash
-          - rm -rf flashplayer.tar.gz
+          - tar --warning=no-unknown-keyword -xf all.tar.xz
+          - rm -rf all.tar.xz
       - type: extra-data
-        filename: all.tar.gz
-        url: http://repo.botfather.io/flathub/all-6.8.0.tar.gz
-        sha256: 569e345f14927e9fe0e672a4a5aec0581b889bd6571ef2a3c1a17a4b3bb8cf01
-        size: 73774941
-      - type: extra-data
-        filename: flashplayer.tar.gz
-        url: http://repo.botfather.io/flathub/fp_ppapi_linux_32.0.0.114_x86_64.tar.gz
-        sha256: deeb079c3c625603a3dff103ffc647f13876beae7a148abaa27eee86abcd8978
-        size: 9482535
+        filename: all.tar.xz
+        url: http://repo.botfather.io/flathub/all-6.9.0.tar.xz
+        sha256: 5f7eba09bed0e0eed7a30071939d38647f3cf3c8f1071b711066f878d130a0ad
+        size: 52890064
