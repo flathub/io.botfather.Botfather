@@ -7,7 +7,9 @@
 	<url type="homepage">https://botfather.io</url>
 	<name>Botfather</name>
 	<summary>Universal automation framework</summary>
-	<developer_name>Botfather</developer_name>
+	<developer id="io.botfather">
+		<name>Botfather</name>
+	</developer>
 	<launchable type="desktop-id">io.botfather.Botfather.desktop</launchable>
 	
 	<description>
