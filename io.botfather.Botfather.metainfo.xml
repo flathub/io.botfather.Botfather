@@ -8,6 +8,7 @@
 	<name>Botfather</name>
 	<summary>Universal automation framework</summary>
 	<developer_name>Botfather</developer_name>
+	<launchable type="desktop-id">io.botfather.Botfather.desktop</launchable>
 	
 	<description>
 		<p>With botfather you can create and run automation bots with ease.
