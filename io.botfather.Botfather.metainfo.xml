@@ -13,10 +13,10 @@
 	<launchable type="desktop-id">io.botfather.Botfather.desktop</launchable>
 	
 	<description>
-		<p>With botfather you can create and run automation bots with ease.
-		Automate your favorite Android, Browser and Desktop applications using bot scripts.
+		<p>With Botfather, you can create and run automation bots with ease.
+		Automate your favorite Android, Browser, and Desktop applications using bot scripts.
 		Find scripts online or create your own using Botfathers convenient APIs.
-		Botfather has image recognition, custom types and many more already built in.</p>
+		Botfather already has image recognition, custom types, and much more built-in.</p>
 	</description>
 
 	<screenshots>
