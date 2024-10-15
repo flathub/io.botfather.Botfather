@@ -1,7 +1,7 @@
 app-id: io.botfather.Botfather
 default-branch: stable
 runtime: org.kde.Platform
-runtime-version: '5.15-22.08'
+runtime-version: '5.15-23.08'
 sdk: org.kde.Sdk
 command: botfather
 tags:
@@ -59,6 +59,6 @@ modules:
           - rm -rf all.tar.xz
       - type: extra-data
         filename: all.tar.xz
-        url: http://repo.botfather.io/flathub/all-6.9.0.tar.xz
-        sha256: 5f7eba09bed0e0eed7a30071939d38647f3cf3c8f1071b711066f878d130a0ad
-        size: 52890064
+        url: http://repo.botfather.io/flathub/all-6.9.1.tar.xz
+        sha256: 0ed53859ca98f9861c47ed49713971561fe8346638c5b7a7a78dcfd36e405cd8
+        size: 52899092
