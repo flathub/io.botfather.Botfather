@@ -3,7 +3,7 @@
 <component type="desktop-application">
 	<id>io.botfather.Botfather</id>
 	<metadata_license>CC0-1.0</metadata_license>
-	<project_license>LicenseRef-proprietary=https://botfather.io/docs/legal/tos/</project_license>
+	<project_license>MIT</project_license>
 	<url type="homepage">https://botfather.io</url>
 	<name>Botfather</name>
 	<summary>Universal automation framework</summary>
@@ -11,12 +11,12 @@
 		<name>Botfather</name>
 	</developer>
 	<launchable type="desktop-id">io.botfather.Botfather.desktop</launchable>
-	
+
 	<description>
 		<p>With Botfather, you can create and run automation bots with ease.
-		Automate your favorite Android, Browser, and Desktop applications using bot scripts.
-		Find scripts online or create your own using Botfathers convenient APIs.
-		Botfather already has image recognition, custom types, and much more built-in.</p>
+			Automate your favorite Android, Browser, and Desktop applications using bot scripts.
+			Find scripts online or create your own using Botfathers convenient APIs.
+			Botfather already has image recognition, custom types, and much more built-in.</p>
 	</description>
 
 	<screenshots>
@@ -50,9 +50,10 @@
 		</screenshot>
 	</screenshots>
 
-	<content_rating type="oars-1.1"/>
+	<content_rating type="oars-1.1" />
 
 	<releases>
+		<release date="2024-10-30" version="6.10.0"></release>
 		<release date="2024-10-15" version="6.9.1"></release>
 		<release date="2024-10-14" version="6.9.0"></release>
 		<release date="2021-05-05" version="6.8.0"></release>
