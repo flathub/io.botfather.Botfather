@@ -1,11 +1,9 @@
 app-id: io.botfather.Botfather
 default-branch: stable
 runtime: org.kde.Platform
-runtime-version: '5.15-23.08'
+runtime-version: "5.15-23.08"
 sdk: org.kde.Sdk
 command: botfather
-tags:
-  - proprietary
 finish-args:
   - "--filesystem=home:rw" # let user use their scripts properly
   - "--require-version=0.11.4" # fixes kde file saving
@@ -18,6 +16,10 @@ finish-args:
   - "--talk-name=org.freedesktop.ScreenSaver"
   - "--talk-name=org.freedesktop.Notifications"
   - "--talk-name=org.kde.StatusNotifierWatcher"
+build-options:
+  env:
+    CEF_ROOT: "/app/CEF"
+    LD_LIBRARY_PATH: "/app/lib"
 cleanup:
   - "/CEF"
   - "/include"
@@ -28,12 +30,24 @@ cleanup:
   - "*.a"
 modules:
   - shared-modules/udev/udev-175.json
+  - cef/cef-3.3578.1861-linux64.json
   - opencv/opencv-4.9.0.json
   - libgit2/libgit2.json
   - name: botfather
+    buildsystem: cmake
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+    no-make-install: true
+    builddir: true
+    build-commands:
+      - cp -R bin/Release/* /app/bin
+    sources:
+      - type: git
+        url: https://github.com/botfatherio/botfather.git
+        tag: v6.10.0
+  - name: appdata
     buildsystem: simple
     build-commands:
-      - install -D -t /app/bin apply_extra botfather
       - install -Dm644 io.botfather.Botfather-64.png /app/share/icons/hicolor/64x64/apps/io.botfather.Botfather.png
       - install -Dm644 io.botfather.Botfather-128.png /app/share/icons/hicolor/128x128/apps/io.botfather.Botfather.png
       - install -Dm644 -t /app/share/metainfo io.botfather.Botfather.metainfo.xml
@@ -47,18 +61,3 @@ modules:
         path: io.botfather.Botfather.metainfo.xml
       - type: file
         path: io.botfather.Botfather.desktop
-      - type: script
-        dest-filename: botfather
-        commands:
-          - export LD_LIBRARY_PATH=/app/extra:/app/lib:/app/bin
-          - exec /app/extra/botfather "$@"
-      - type: script
-        dest-filename: apply_extra
-        commands:
-          - tar --warning=no-unknown-keyword -xf all.tar.xz
-          - rm -rf all.tar.xz
-      - type: extra-data
-        filename: all.tar.xz
-        url: http://repo.botfather.io/flathub/all-6.9.1.tar.xz
-        sha256: 0ed53859ca98f9861c47ed49713971561fe8346638c5b7a7a78dcfd36e405cd8
-        size: 52899092
