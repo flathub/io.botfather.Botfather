@@ -44,7 +44,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/botfatherio/botfather.git
-        tag: v6.10.0
+        tag: v6.10.1
   - name: appdata
     buildsystem: simple
     build-commands:
